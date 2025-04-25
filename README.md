@@ -79,14 +79,6 @@ As per the project requirements, I developed the entire **React E-Commerce Appli
 - **Payment Gateway Integration** 💳:  
   - Integrating secure payment gateways like Stripe or PayPal to enable smooth transactions for users.
 
-- **Admin Dashboard** 📊:  
-  - A back-end admin panel to manage restaurant menu items, orders, and customer data.
-
-- **User Authentication** 🔐:  
-  - Enabling user sign-up, login, and profile management for order tracking.
-
-- **Recommendation System** 🤖:  
-  - Implementing an intelligent recommendation system for personalized food suggestions.
 
 ---
 
