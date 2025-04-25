@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #143d60;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 45% 23%;
+
+    --primary: 78 53% 71%;
+    --primary-foreground: 210 45% 23%;
+
+    --secondary: 92 36% 70%;
+    --secondary-foreground: 210 45% 23%;
+
+    --accent: 22 100% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 78 53% 95%;
+    --muted-foreground: 210 45% 40%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 45% 23%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 45% 23%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 78 53% 85%;
+    --input: 78 53% 85%;
+    --ring: 22 100% 46%;
+
+    --radius: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .logo-font {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+  }
+
+  /* Custom animation classes */
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Transition classes */
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+}
