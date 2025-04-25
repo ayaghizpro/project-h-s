@@ -121,7 +121,7 @@ To run this project on your local machine, follow the steps below:
 5. **Open the app in your browser**:
 
    Go to:  
-   `http://localhost:3000`
+   `http://localhost:5173`
 
 ---
 
